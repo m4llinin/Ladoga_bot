@@ -1,0 +1,4 @@
+asyncj~=1.1.4
+betterlogging~=1.0.0
+aiogram~=3.8.0
+python-dotenv~=1.0.1

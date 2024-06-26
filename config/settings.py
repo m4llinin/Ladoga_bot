@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 bl.basic_colorized_config(level=logging.INFO)
 
 API_TOKEN = os.getenv("API_TOKEN")
-ADMIN_ID = [os.getenv("ADMIN_ID")]
+ADMIN_ID = os.getenv("ADMIN_ID").split(",")
 
 bot = Bot(token=API_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
 dp = Dispatcher()
